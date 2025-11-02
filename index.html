@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- fonts end -->
+  </head>
+  <body data-bs-spy="scroll" data-bs-target="#mainnav">
+    <!-- navbar st -->
+
+    <nav id="mainnav" class="navbar navbar-expand-lg bg-body-tertiary mx-auto mt-4">
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item px-4 fw-bolder">
+              <a
+                class="nav-link active text-white-50"
+                aria-current="page"
+                href="#homesec"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item px-4 fw-bolder">
+              <a class="nav-link text-white-50" href="#aboutmeSec">About Me</a>
+            </li>
+            <li class="nav-item px-4 fw-bolder">
+              <a class="nav-link text-white-50" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item px-4 fw-bolder">
+              <a class="nav-link text-white-50" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item px-4 fw-bolder">
+              <a class="nav-link text-white-50" href="#aboutmeSec"
+                >Contact Me</a
+              >
+            </li>
+          </ul>
+          <button
+            id="downloadbtn"
+            onclick="startDownload()"
+            class="btn text-white fw-bolder fs-5 me-3"
+          >
+            <span id="text">Download CV</span>
+            <span id="loader" class="d-none"></span>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- navbar end -->
+
+    <!-- home section -->
+    <section id="homesec">
+      <div class="container">
+        <div class="row">
+          <div id="homedisc" class="col-md-6" style="margin-top: 10%">
+            <div class="inner w-100">
+              <h5 class="text-white">WELCOME TO MY PORTFOLIO✨</h5>
+              <h5 class="mt-4">
+                <span
+                  style="font-size: 50px !important"
+                  class="h1 fw-bolder me-2"
+                  >Hi,I'm</span
+                >
+                Ahmed Ali
+              </h5>
+              <h1 id="typing" class="mt-4" style="font-size: 70px">
+                <span style="color: #7c1d7f">FrontEnd</span> Developer
+              </h1>
+              <p>
+                Front-End Developer focused on performance, aesthetics, and user
+                experience,Building modern websites that connect, inspire, and
+                convert
+              </p>
+            </div>
+          </div>
+          <div id="imgback" class="col-md-6 text-end">
+            <img
+              id="homeimg"
+              src="./images/m_img (1).png"
+              class="w-75 mt-0"
+              alt="home_image"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- end home section -->
+
+    <!-- about me section -->
+
+    <section id="aboutmeSec">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="inner w-75 mx-auto">
+              <img
+                id="aboutimg"
+                class="w-100"
+                src="./images/about img.jpg"
+                alt="about"
+              />
+            </div>
+          </div>
+          <div class="col-md-6 mt-3">
+            <div class="inner">
+              <h1 class="fw-bolder">About Me</h1>
+              <p class="mt-5 fs-5 fw-light" style="opacity: 0.8">
+                👋 Hi there! I’m Ahmed Ali, a passionate student at the Faculty
+                of Computers and Artificial Intelligence, with a deep interest
+                in web development and modern technologies. I’ve completed a
+                6-month professional diploma at Root Academy, where I gained
+                hands-on experience in front-end development and built
+                real-world projects that strengthened both my coding skills and
+                problem-solving mindset. I’m known for being easy to work with —
+                I listen carefully, understand client goals clearly, and always
+                aim to deliver results that match (or even exceed) expectations.
+                My goal isn’t just to complete a project, but to build long-term
+                trust through smooth communication, clean code, and high-quality
+                results. If you’re looking for a developer who combines
+                creativity, precision, and reliability — you’ve found the right
+                person 💪
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- end about me section -->
+
+    <!-- skills section -->
+    <section id="skills">
+      <h1 class="fw-bold text-center">Skills</h1>
+      <div
+        id="icons"
+        class="icons mt-5 d-flex justify-content-evenly flex-wrap"
+      >
+        <div class="mt-2" id="icon">
+          <i
+            id="pl"
+            class="fa-brands fa-html5 text-white p-1 rounded-4"
+            style="font-size: 100px; background-color: #7c1d7f"
+          ></i>
+          <h5 id="plname" class="fs-1 text-center mt-3">HTML</h5>
+        </div>
+        <div class="mt-2">
+          <i
+            id="pl"
+            class="fa-brands fa-css text-white p-1 rounded-4"
+            style="font-size: 100px; background-color: #7c1d7f"
+          ></i>
+          <h5 id="plname" class="fs-1 text-center mt-3">CSS</h5>
+        </div>
+        <div class="mt-2">
+          <i
+            id="pl"
+            class="fa-brands fa-square-js text-white p-1 rounded-4"
+            style="font-size: 100px; background-color: #7c1d7f"
+          ></i>
+          <h5 id="plname" class="fs-1 text-center mt-3">JS</h5>
+        </div>
+        <div class="d-flex flex-column align-items-center mt-2">
+          <i
+            id="pl"
+            class="fa-brands fa-bootstrap text-white p-1 rounded-4"
+            style="font-size: 100px; background-color: #7c1d7f"
+          ></i>
+          <h5 id="plname" class="fs-3 text-center mt-3">BOOTSTRAP</h5>
+        </div>
+      </div>
+    </section>
+
+    <!--end skills section -->
+
+    <!-- projects portfolio -->
+
+    <section id="projects">
+      <h1 class="fw-bold text-center">My Projects</h1>
+      <div class="container mt-5">
+        <div class="row">
+          <div class="col-md-4 pb-4">
+            <div class="inner">
+              <div class="card w-100 rounded-4" style="width: 18rem ;">
+                <img
+                  class="p-2 rounded-4"
+                  src="./images/login.jpg"
+                  class="card-img-top"
+                  alt="login"
+                />
+                <div class="card-body rounded-bottom-3">
+                  <div class="d-flex justify-content-between mt-3 flex-wrap">
+                    <h4 class="card-title fw-bold text-white">Login System💻</h4>
+                    <a id="prolink"
+                    target="_blank"
+                      href="https://engahmedali901.github.io/login_project/"
+                      class="btn rounded-5"
+                      style="background-color: #b995bc"
+                      >Experience it</a
+                    >
+                  </div>
+                  <p class="card-text mt-3 fw-light" style="opacity: 0.7;">
+                    A responsive and interactive front-end web project built
+                    using modern web technologies like HTML, CSS, and
+                    JavaScript. Focused on clean design, smooth animations, and
+                    a user-friendly experience across all devices.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 pb-4">
+            <div class="inner">
+              <div class="card w-100 rounded-4" style="width: 18rem">
+                <img
+                  class="p-2 rounded-4"
+                  src="./images/fitweather.jpg"
+                  class="card-img-top"
+                  alt="weather"
+                />
+                <div class="card-body rounded-bottom-3">
+                  <div class="d-flex justify-content-between mt-3 flex-wrap">
+                    <h4 class="card-title fw-bold text-white">Weather App🌤️</h4>
+                    <a id="prolink"
+                    target="_blank"
+                      href="https://engahmedali901.github.io/forecast-Project/"
+                      class="btn rounded-5"
+                      style="background-color: #b995bc"
+                      >Experience it</a
+                    >
+                  </div>
+                  <p class="card-text mt-3 fw-light" style="opacity: 0.7;">
+                    A responsive and interactive front-end web project built
+                    using modern web technologies like HTML, CSS, and
+                    JavaScript. Focused on clean design, smooth animations, and
+                    a user-friendly experience across all devices.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="inner">
+              <div class="card w-100 rounded-4" style="width: 18rem">
+                <img
+                  class="p-2 rounded-4"
+                  src="./images/fitportfolio.jpg"
+                  class="card-img-top"
+                  alt="fullportfolio"
+                />
+                <div class="card-body rounded-bottom-3">
+                  <div class="d-flex justify-content-between mt-3 flex-wrap">
+                    <h4 class="card-title fw-bold text-white">Full PORTFOLIO✨</h4>
+                    <a id="prolink"
+                    target="_blank"
+                      href="https://engahmedali901.github.io/portfolio-project/"
+                      class="btn rounded-5"
+                      style="background-color: #b995bc"
+                      >Experience it</a
+                    >
+                  </div>
+                  <p class="card-text mt-3 fw-light" style="opacity: 0.7;">
+                    A responsive and interactive front-end web project built
+                    using modern web technologies like HTML, CSS, and
+                    JavaScript. Focused on clean design, smooth animations, and
+                    a user-friendly experience across all devices.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="./js/all.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
