@@ -19,7 +19,10 @@
   <body data-bs-spy="scroll" data-bs-target="#mainnav">
     <!-- navbar st -->
 
-    <nav id="mainnav" class="navbar navbar-expand-lg bg-body-tertiary mx-auto mt-4">
+    <nav
+      id="mainnav"
+      class="navbar navbar-expand-lg bg-body-tertiary mx-auto mt-4"
+    >
       <div class="container-fluid">
         <button
           class="navbar-toggler"
@@ -52,7 +55,7 @@
               <a class="nav-link text-white-50" href="#projects">Projects</a>
             </li>
             <li class="nav-item px-4 fw-bolder">
-              <a class="nav-link text-white-50" href="#aboutmeSec"
+              <a class="nav-link text-white-50" href="#contactsection"
                 >Contact Me</a
               >
             </li>
@@ -204,7 +207,7 @@
         <div class="row">
           <div class="col-md-4 pb-4">
             <div class="inner">
-              <div class="card w-100 rounded-4" style="width: 18rem ;">
+              <div class="card w-100 rounded-4" style="width: 18rem">
                 <img
                   class="p-2 rounded-4"
                   src="./images/login.jpg"
@@ -213,16 +216,19 @@
                 />
                 <div class="card-body rounded-bottom-3">
                   <div class="d-flex justify-content-between mt-3 flex-wrap">
-                    <h4 class="card-title fw-bold text-white">Login System💻</h4>
-                    <a id="prolink"
-                    target="_blank"
+                    <h4 class="card-title fw-bold text-white">
+                      Login System💻
+                    </h4>
+                    <a
+                      id="prolink"
+                      target="_blank"
                       href="https://engahmedali901.github.io/login_project/"
                       class="btn rounded-5"
                       style="background-color: #b995bc"
                       >Experience it</a
                     >
                   </div>
-                  <p class="card-text mt-3 fw-light" style="opacity: 0.7;">
+                  <p class="card-text mt-3 fw-light" style="opacity: 0.7">
                     A responsive and interactive front-end web project built
                     using modern web technologies like HTML, CSS, and
                     JavaScript. Focused on clean design, smooth animations, and
@@ -244,15 +250,16 @@
                 <div class="card-body rounded-bottom-3">
                   <div class="d-flex justify-content-between mt-3 flex-wrap">
                     <h4 class="card-title fw-bold text-white">Weather App🌤️</h4>
-                    <a id="prolink"
-                    target="_blank"
+                    <a
+                      id="prolink"
+                      target="_blank"
                       href="https://engahmedali901.github.io/forecast-Project/"
                       class="btn rounded-5"
                       style="background-color: #b995bc"
                       >Experience it</a
                     >
                   </div>
-                  <p class="card-text mt-3 fw-light" style="opacity: 0.7;">
+                  <p class="card-text mt-3 fw-light" style="opacity: 0.7">
                     A responsive and interactive front-end web project built
                     using modern web technologies like HTML, CSS, and
                     JavaScript. Focused on clean design, smooth animations, and
@@ -273,16 +280,19 @@
                 />
                 <div class="card-body rounded-bottom-3">
                   <div class="d-flex justify-content-between mt-3 flex-wrap">
-                    <h4 class="card-title fw-bold text-white">Full PORTFOLIO✨</h4>
-                    <a id="prolink"
-                    target="_blank"
+                    <h4 class="card-title fw-bold text-white">
+                      Full PORTFOLIO✨
+                    </h4>
+                    <a
+                      id="prolink"
+                      target="_blank"
                       href="https://engahmedali901.github.io/portfolio-project/"
                       class="btn rounded-5"
                       style="background-color: #b995bc"
                       >Experience it</a
                     >
                   </div>
-                  <p class="card-text mt-3 fw-light" style="opacity: 0.7;">
+                  <p class="card-text mt-3 fw-light" style="opacity: 0.7">
                     A responsive and interactive front-end web project built
                     using modern web technologies like HTML, CSS, and
                     JavaScript. Focused on clean design, smooth animations, and
@@ -290,6 +300,63 @@
                   </p>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--end projects portfolio -->
+
+    <!-- contact me section -->
+
+    <section id="contactsection" style="margin-top: 10%">
+      <h1 class="fw-bold text-center mainh">Contact</h1>
+      <div class="container" style="margin-top: 10%">
+        <div class="row">
+          <div class="col-md-7">
+            <div class="inner d-flex">
+              <h1>✨</h1>
+              <h1 class="fw-bolder">Let's Create Something Amazing Together</h1>
+            </div>
+            <img class="w-50" src="./images/underline.png" alt="underline" />
+          </div>
+          <div class="col-md-5">
+            <div class="inner">
+              <h5>Name</h5>
+              <div class="form-floating mb-3 mt-3">
+                <input
+                  id="namebtn"
+                  type="text"
+                  class="form-control"
+                  placeholder="name"
+                />
+                <label for="namebtn" style="color: rgba(255, 255, 255, 0.5)"
+                  >your name</label
+                >
+              </div>
+              <h5 class="mt-5">Email</h5>
+              <div class="form-floating mb-3 mt-3">
+                <input
+                  id="mailbtn"
+                  type="email"
+                  class="form-control"
+                  placeholder="email"
+                />
+                <label for="mailbtn" style="color: rgba(255, 255, 255, 0.5)"
+                  >your mail</label
+                >
+              </div>
+              <h5 class="mt-5">Message</h5>
+              <div class="form-floating mb-3 mt-3">
+                  <textarea
+                    class="form-control"
+                    placeholder="enter message"
+                    id="msgbtn"
+                    style="height: 100px"
+                  ></textarea>
+              </div>
+             <div id="btncontainer" class=" text-center"> <button id="subbtn" type="submit" class="btn text-white px-4 mt-4" style="background-color: #AB46AE;">Send Message</button></div>
             </div>
           </div>
         </div>
