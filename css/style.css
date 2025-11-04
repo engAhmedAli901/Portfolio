@@ -79,10 +79,21 @@ nav{
   border-radius: 20px;
   filter: drop-shadow(0px 0px 5px rgb(247, 2, 255));
   transition: transform .3s ease-in-out;
+  opacity: 0;
+   transform: translateY(500%) ;
+  animation: smalldown 1.5s ease-out 0.5s forwards , appear 1s ease-out 0.5s forwards;
+  animation-timeline: view() !important;
+  animation-range: entry 0% cover 80% !important ; 
 }
 #aboutimg:hover{
   transform:  translateY(-0.5%);
   animation: shake 2s ease-in-out infinite;
+}
+#aboutdisc{
+  opacity: 0;
+  animation: appear 1s ease-out 1s forwards;
+  animation-timeline: view() !important;
+  animation-range: entry 0% cover 80% !important ;
 }
 #skills , #projects{
   margin-top: 10%;
@@ -95,10 +106,10 @@ nav{
 #pl{
   opacity: 0;
   filter: drop-shadow(rgba(0,0,0));
-  animation: appear 1s ease-out 0.5s forwards, minishadow 1s ease-out 1s forwards;
+  animation: appear 1s ease-out  forwards, minishadow 1s ease-out 1s forwards;
   transition: transform 0.5s ease-in-out;
   animation-timeline: view() !important;
-  animation-range: entry 1% cover 100vh !important ; 
+  animation-range: entry 0% cover 80% !important ; 
 }
 #pl:hover{
   transform: scale(1.1);
@@ -107,9 +118,9 @@ nav{
   opacity: 0;
   font-family: "Pacifico", cursive;
   transform: translateY(500%) ;
-  animation: smalldown 1.5s ease-out 2s forwards , appear 1s ease-out 2s forwards;
+  animation: smalldown 1.5s ease-out 0.5s forwards , appear 1s ease-out 0.5s forwards;
   animation-timeline: view() !important;
-  animation-range: entry 1% cover 100vh !important ; 
+  animation-range: entry 0% cover 80% !important ; 
 }
 #projects{
   filter: drop-shadow(0px 0px 500px rgba(247, 2, 255,0.5));
