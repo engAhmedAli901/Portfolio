@@ -97,8 +97,8 @@ nav{
   filter: drop-shadow(rgba(0,0,0));
   animation: appear 0.5s ease-out 0.5s forwards, minishadow 1s ease-out 1s forwards;
   transition: transform 0.5s ease-in-out;
-  /* animation-timeline: view() !important;
-  animation-range: entry 0 cover !important ; */
+  animation-timeline: view() !important;
+  animation-range: entry 0 cover !important ; 
 }
 #pl:hover{
   transform: scale(1.1);
