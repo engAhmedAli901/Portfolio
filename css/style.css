@@ -73,6 +73,11 @@ nav{
 #aboutmeSec{
   margin-top: 20%;
   font-family: "Poppins", sans-serif;
+  opacity: 0;
+   transform: translateY(10%) !important;
+  animation: smalldown 1.5s ease-out 0.5s forwards , appear 1s ease-out 0.5s forwards;
+  animation-timeline: view() !important;
+  animation-range: entry 0% cover 60% !important ; 
 }
 #aboutimg{
   border: 5px solid #7C1D7F;
@@ -80,24 +85,26 @@ nav{
   filter: drop-shadow(0px 0px 5px rgb(247, 2, 255));
   transition: transform .3s ease-in-out;
   opacity: 0;
-   transform: translateY(500%) ;
+   transform: translateY(10%) !important;
   animation: smalldown 1.5s ease-out 0.5s forwards , appear 1s ease-out 0.5s forwards;
   animation-timeline: view() !important;
-  animation-range: entry 0% cover 80% !important ; 
+  animation-range: entry 0% cover 60% !important ; 
 }
 #aboutimg:hover{
   transform:  translateY(-0.5%);
   animation: shake 2s ease-in-out infinite;
 }
-#aboutdisc{
-  opacity: 0;
-  animation: appear 1s ease-out 1s forwards;
+.aboutdisc{
+  animation: appear 1s ease-out 1s forwards !important;
   animation-timeline: view() !important;
-  animation-range: entry 0% cover 80% !important ;
+  animation-range: entry 0% cover 10% !important ;
 }
 #skills , #projects{
   margin-top: 10%;
   font-family: "Poppins", sans-serif;
+}
+#skills{
+  
 }
 #skills h1,#projects h1,#contactsection .mainh{
   filter: drop-shadow(0px 0px 5px rgb(255, 255, 255));
@@ -124,10 +131,16 @@ nav{
 }
 #projects{
   filter: drop-shadow(0px 0px 500px rgba(247, 2, 255,0.5));
+  opacity: 0;
+   transform: translateY(10%) !important;
+  animation: smalldown 1.5s ease-out 0.5s forwards , appear 1s ease-out 0.5s forwards;
+  animation-timeline: view() !important;
+  animation-range: entry 0% cover 60% !important ; 
 }
 .card{
   background-color: #18021E;
    transition: transform 0.5s ease-in-out;
+   transition: transform .3s ease-in-out;
 
 }
 .card-body{
@@ -147,6 +160,11 @@ nav{
 #contactsection{
   padding-bottom: 10%;
   background: linear-gradient( to top right,rgb(141, 98, 110),rgb(20, 0, 25),rgb(23, 0, 29));
+  opacity: 0;
+   transform: translateY(10%) !important;
+  animation: smalldown 1.5s ease-out 0.5s forwards , appear 1s ease-out 0.5s forwards;
+  animation-timeline: view() !important;
+  animation-range: entry 0% cover 60% !important ; 
 }
 #namebtn,#mailbtn,#msgbtn{
   background-color: transparent !important;
