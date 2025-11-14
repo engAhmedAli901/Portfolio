@@ -79,6 +79,10 @@ nav{
   border-radius: 20px;
   filter: drop-shadow(0px 0px 5px rgb(247, 2, 255));
   transition: transform .3s ease-in-out;
+  transform: translatex(-200%);
+  animation: slidein 10s ease-in-out 1s forwards;
+  animation-timeline: view();
+  animation-range:  0%  60%  ; 
 }
 #aboutimg:hover{
   opacity: 1 !important;
@@ -86,9 +90,10 @@ nav{
   animation: shake 2s ease-in-out infinite alternate !important;
 }
 .aboutdisc{
-  animation: appear 1s ease-out 1s forwards !important;
-  animation-timeline: view() !important;
-  animation-range: entry 0% cover 10% !important ;
+   transform: translatex(200%);
+  animation: slideout 10s ease-in-out 1s forwards;
+  animation-timeline: view();
+  animation-range:  0%  60%  ; 
 }
 #skills , #projects{
   margin-top: 10%;
@@ -102,21 +107,21 @@ nav{
 #pl{
   opacity: 0;
   filter: drop-shadow(rgba(0,0,0));
-  animation: appear 1s ease-out  forwards, minishadow 1s ease-out 1s forwards;
+  animation: appear 10s ease-out  forwards, minishadow 1s ease-out 1s forwards;
   transition: transform 0.5s ease-in-out;
   animation-timeline: view() !important;
-  animation-range: entry 0% cover 80% !important ; 
+  animation-range: entry 0% cover 50% !important ; 
 }
 #pl:hover{
   transform: scale(1.1);
 }
 #plname{
   opacity: 0;
-  font-family: "Pacifico", cursive;
-  transform: translateY(500%) ;
+  font-family: cursive;
+  transform: translateY(300%) ;
   animation: smalldown 1.5s ease-out 0.5s forwards , appear 1s ease-out 0.5s forwards;
   animation-timeline: view() !important;
-  animation-range: entry 0% cover 80% !important ; 
+  animation-range: entry 0% cover 30% !important ; 
 }
 #projects{
   filter: drop-shadow(0px 0px 500px rgba(247, 2, 255,0.5));
@@ -125,6 +130,10 @@ nav{
   background-color: #18021E;
    transition: transform 0.5s ease-in-out;
    transition: transform .3s ease-in-out;
+   transform: translatex(-500%);
+  animation: slidein 10s ease-in-out 1s forwards;
+  animation-timeline: view();
+  animation-range:  0%  50%  ;
 
 }
 .card-body{
@@ -144,6 +153,12 @@ nav{
 #contactsection{
   padding-bottom: 10%;
   background: linear-gradient( to top right,rgb(141, 98, 110),rgb(20, 0, 25),rgb(47, 0, 54));
+}
+#part1{
+   transform: translatex(-200%);
+  animation: slidein 10s ease-in-out 1s forwards;
+  animation-timeline: view();
+  animation-range:  0%  60%  ;
 }
 #namebtn,#mailbtn,#msgbtn{
   background-color: transparent !important;
@@ -166,7 +181,12 @@ nav{
 #msgbtn::placeholder{
   color: rgba(255, 255, 255, 0.5);
 }
-
+#part2{
+  transform: translatex(200%);
+  animation: slideout 10s ease-in-out 1s forwards;
+  animation-timeline: view();
+  animation-range:  0%  40%  ; 
+}
 
 
 
