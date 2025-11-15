@@ -90,10 +90,11 @@ nav{
   animation: shake 2s ease-in-out infinite alternate !important;
 }
 .aboutdisc{
-   transform: translatex(200%);
-  animation: slideout 10s ease-in-out 1s forwards;
-  animation-timeline: view();
-  animation-range:  0%  60%  ; 
+   transform: translatex(150%);
+   opacity: 0;
+  animation: slideout 2s ease-in-out 1s forwards,appear 1s ease-out 1s forwards !important;
+  animation-timeline: view() !important;
+  animation-range:  0%  50%  !important; 
 }
 #skills , #projects{
   margin-top: 10%;
@@ -128,10 +129,10 @@ nav{
 }
 .card{
   background-color: #18021E;
-   transition: transform 0.5s ease-in-out;
-   transition: transform .3s ease-in-out;
-   transform: translatex(-500%);
-  animation: slidein 10s ease-in-out 1s forwards;
+   transition: transform 0.5s ease-in-out !important;
+   transform: translatex(-100%);
+   opacity: 0;
+  animation: slidein 10s ease-in-out 1s forwards,appear 1s ease-out 1s forwards;
   animation-timeline: view();
   animation-range:  0%  50%  ;
 
@@ -140,7 +141,7 @@ nav{
   background: linear-gradient( to top,rgb(115, 47, 120),rgba(46, 12, 51, 1),rgb(23, 0, 29));
 }
 .card:hover{
-  transform: scale(1.05);
+  transform: scale(1.05) !important;
   background-color: rgb(130, 38, 128) !important;
 }
 .card:hover .card-body{
@@ -288,5 +289,20 @@ nav{
   }
   to{
     filter: drop-shadow(0px 0px 20px rgb(255, 219, 14) );
+  }
+}
+@media (max-width: 950px) {
+  * {
+    animation-timeline: auto !important;
+    animation-range: normal !important;
+  }
+}
+@media (max-width: 950px) {
+  #aboutimg, .aboutdisc, .card, #part1, #part2, #pl, #plname {
+    animation-timeline: auto !important;
+    animation-range: auto !important;
+    animation: appear 1s ease-out forwards !important;
+    transform: translateX(0%) !important;
+    opacity: 1 !important;
   }
 }
