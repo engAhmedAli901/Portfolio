@@ -79,23 +79,13 @@ nav{
   border-radius: 20px;
   filter: drop-shadow(0px 0px 5px rgb(247, 2, 255));
   transition: transform .3s ease-in-out;
-  transform: translatex(-200%);
-  animation: slidein 10s ease-in-out 1s forwards;
-  animation-timeline: view();
-  animation-range:  0%  60%  ; 
 }
 #aboutimg:hover{
   opacity: 1 !important;
   transform:  translateY(-0.5%);
   animation: shake 2s ease-in-out infinite alternate !important;
 }
-.aboutdisc{
-   transform: translatex(150%);
-   opacity: 0;
-  animation: slideout 2s ease-in-out 1s forwards,appear 1s ease-out 1s forwards !important;
-  animation-timeline: view() !important;
-  animation-range:  0%  50%  !important; 
-}
+
 #skills , #projects{
   margin-top: 10%;
   font-family: "Poppins", sans-serif;
@@ -105,24 +95,15 @@ nav{
   filter: drop-shadow(0px 0px 5px rgb(255, 255, 255));
   font-size: 50px;
 }
-#pl{
-  opacity: 0;
+
+.svg-inline--fa{
+  opacity: 1 !important;
+  margin-bottom: 30px;
   filter: drop-shadow(rgba(0,0,0));
-  animation: appear 10s ease-out  forwards, minishadow 1s ease-out 1s forwards;
   transition: transform 0.5s ease-in-out;
-  animation-timeline: view() !important;
-  animation-range: entry 0% cover 50% !important ; 
-}
-#pl:hover{
-  transform: scale(1.1);
 }
 #plname{
-  opacity: 0;
   font-family: cursive;
-  transform: translateY(300%) ;
-  animation: smalldown 1.5s ease-out 0.5s forwards , appear 1s ease-out 0.5s forwards;
-  animation-timeline: view() !important;
-  animation-range: entry 0% cover 30% !important ; 
 }
 #projects{
   filter: drop-shadow(0px 0px 500px rgba(247, 2, 255,0.5));
@@ -130,12 +111,6 @@ nav{
 .card{
   background-color: #18021E;
    transition: transform 0.5s ease-in-out !important;
-   transform: translatex(-100%);
-   opacity: 0;
-  animation: slidein 10s ease-in-out 1s forwards,appear 1s ease-out 1s forwards;
-  animation-timeline: view();
-  animation-range:  0%  50%  ;
-
 }
 .card-body{
   background: linear-gradient( to top,rgb(115, 47, 120),rgba(46, 12, 51, 1),rgb(23, 0, 29));
@@ -156,10 +131,6 @@ nav{
   background: linear-gradient( to top right,rgb(141, 98, 110),rgb(20, 0, 25),rgb(47, 0, 54));
 }
 #part1{
-   transform: translatex(-200%);
-  animation: slidein 10s ease-in-out 1s forwards;
-  animation-timeline: view();
-  animation-range:  0%  60%  ;
 }
 #namebtn,#mailbtn,#msgbtn{
   background-color: transparent !important;
@@ -181,12 +152,6 @@ nav{
 }
 #msgbtn::placeholder{
   color: rgba(255, 255, 255, 0.5);
-}
-#part2{
-  transform: translatex(200%);
-  animation: slideout 10s ease-in-out 1s forwards;
-  animation-timeline: view();
-  animation-range:  0%  40%  ; 
 }
 
 
@@ -291,18 +256,4 @@ nav{
     filter: drop-shadow(0px 0px 20px rgb(255, 219, 14) );
   }
 }
-@media (max-width: 950px) {
-  * {
-    animation-timeline: auto !important;
-    animation-range: normal !important;
-  }
-}
-@media (max-width: 950px) {
-  #aboutimg, .aboutdisc, .card, #part1, #part2, #pl, #plname {
-    animation-timeline: auto !important;
-    animation-range: auto !important;
-    animation: appear 1s ease-out forwards !important;
-    transform: translateX(0%) !important;
-    opacity: 1 !important;
-  }
-}
+

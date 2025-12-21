@@ -165,7 +165,7 @@
       >
         <div class="mt-2" id="icon">
           <i
-            id="pl"
+            
             class="fa-brands fa-html5 text-white p-1 rounded-4"
             style="font-size: 100px; background-color: #7c1d7f"
           ></i>
@@ -173,7 +173,7 @@
         </div>
         <div class="mt-2">
           <i
-            id="pl"
+            
             class="fa-brands fa-css text-white p-1 rounded-4"
             style="font-size: 100px; background-color: #7c1d7f"
           ></i>
@@ -181,7 +181,7 @@
         </div>
         <div class="mt-2">
           <i
-            id="pl"
+            
             class="fa-brands fa-square-js text-white p-1 rounded-4"
             style="font-size: 100px; background-color: #7c1d7f"
           ></i>
@@ -189,7 +189,7 @@
         </div>
         <div class="d-flex flex-column align-items-center mt-2">
           <i
-            id="pl"
+            
             class="fa-brands fa-bootstrap text-white p-1 rounded-4"
             style="font-size: 100px; background-color: #7c1d7f"
           ></i>
@@ -336,6 +336,40 @@
               </div>
             </div>
           </div>
+          <div class="col-md-4 pb-4">
+            <div class="inner">
+              <div class="card w-100 rounded-4" style="width: 18rem">
+                <img
+                style="padding-bottom: 50px !important;"
+                  class="p-2 rounded-4"
+                  src="./images/wazaker.jpeg"
+                  class="card-img-top"
+                  alt="login"
+                />
+                <div class="card-body rounded-bottom-3">
+                  <div class="d-flex justify-content-between mt-3 flex-wrap">
+                    <h4 class="card-title fw-bold text-white">
+                       وَذَكِّرْ فَإِنَّ الذِّكْرَىٰ تَنفَعُ الْمُؤْمِنِينَ
+                    </h4>
+                    <a
+                      id="prolink"
+                      target="_blank"
+                      href="https://dashing-tiramisu-fa15e7.netlify.app/"
+                      class="btn rounded-5"
+                      style="background-color: #b995bc"
+                      >Experience it</a
+                    >
+                  </div>
+                  <p class="card-text mt-3 fw-light" style="opacity: 0.7">
+                    A responsive and interactive front-end web project built
+                    using modern web technologies like HTML, CSS, and
+                    JavaScript. Focused on clean design, smooth animations, and
+                    a user-friendly experience across all devices.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -400,5 +434,17 @@
     <script src="./js/all.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
     <script src="./js/index.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+    if (typeof ScrollReveal !== "undefined") {
+        ScrollReveal().reveal('body *:not(nav):not(.menu)', {
+            duration: 800,
+            distance: '40px',
+            origin: 'bottom',
+            easing: 'ease-out',
+            reset: false
+        });
+    }
+</script>
   </body>
 </html>
