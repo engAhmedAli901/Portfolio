@@ -153,6 +153,12 @@ nav{
 #msgbtn::placeholder{
   color: rgba(255, 255, 255, 0.5);
 }
+.contacting div p{
+  font-family: cursive;
+  background-color: #7D1C82;
+  border-radius: 50px;
+  padding: 8px;
+}
 
 
 
