@@ -66,7 +66,7 @@
             onclick="startDownload()"
             class="btn text-white fw-bolder fs-5 me-3"
           >
-            <span id="text"><a class="text-decoration-none text-white" href="../paper_cv/Paper_CV.pdf" download="Ahmed_CV.pdf">Download CV</a></span>
+            <span id="text"><a class="text-decoration-none text-white" href="./cv/MyCv.pdf" download="Ahmed_CV.pdf">Download CV</a></span>
             <span id="loader" class="d-none"></span>
           </button>
         </div>
@@ -159,41 +159,61 @@
     <!-- skills section -->
     <section id="skills">
       <h1 class="fw-bold text-center">Skills</h1>
-      <div
+      <div class="container">
+        <div class="row">
+          <div
         id="icons"
         class="icons mt-5 d-flex justify-content-evenly flex-wrap"
       >
-        <div class="mt-2" id="icon">
-          <i
-            id="pl"
-            class="fa-brands fa-html5 text-white p-1 rounded-4"
-            style="font-size: 100px; background-color: #7c1d7f"
-          ></i>
+        <div class="col-md-4">
+          <div class="mt-2" id="icon">
+          <img src="./images/html logo.png" class="w-100"  alt="">
           <h5 id="plname" class="fs-1 text-center mt-3">HTML</h5>
         </div>
-        <div class="mt-2">
-          <i
-            id="pl"
-            class="fa-brands fa-css text-white p-1 rounded-4"
-            style="font-size: 100px; background-color: #7c1d7f"
-          ></i>
+        </div>
+        <div class="col-md-4">
+          <div class="mt-2">
+         <img src="./images/css logo.png" class="w-100"  alt="">
           <h5 id="plname" class="fs-1 text-center mt-3">CSS</h5>
         </div>
-        <div class="mt-2">
-          <i
-            id="pl"
-            class="fa-brands fa-square-js text-white p-1 rounded-4"
-            style="font-size: 100px; background-color: #7c1d7f"
-          ></i>
+        </div>
+        <div class="col-md-4">
+          <div class="mt-2">
+          <img src="./images/js logo4.png" class="w-100"  alt="">
           <h5 id="plname" class="fs-1 text-center mt-3">JS</h5>
         </div>
-        <div class="d-flex flex-column align-items-center mt-2">
-          <i
-            id="pl"
-            class="fa-brands fa-bootstrap text-white p-1 rounded-4"
-            style="font-size: 100px; background-color: #7c1d7f"
-          ></i>
+        </div>
+        <div class="col-md-4">
+          <div class="d-flex flex-column align-items-center mt-2">
+          <img src="./images/bootstrap logo.png" class="w-100"  alt="">
           <h5 id="plname" class="fs-3 text-center mt-3">BOOTSTRAP</h5>
+        </div>
+        </div>
+        <div class="col-md-4">
+          <div class="d-flex flex-column align-items-center mt-2">
+            <img src="./images/tailwind logo.png" class="w-100"  alt="">
+          <h5 id="plname" class="fs-3 text-center mt-3">Tailwind</h5>
+        </div>
+        </div>
+        <div class="col-md-4">
+          <div class="d-flex flex-column align-items-center mt-2">
+            <img src="./images/rea.png" class="w-100"  alt="">
+          <h5 id="plname" class="fs-3 text-center mt-3">React</h5>
+        </div>
+        </div>
+         <div class="col-md-4">
+          <div class="d-flex flex-column align-items-center mt-2">
+            <img src="./images/next logo.png" class="w-100"  alt="">
+          <h5 id="plname" class="fs-3 text-center mt-3">Next js</h5>
+        </div>
+         </div>
+        <div class="col-md-4">
+          <div class="d-flex flex-column align-items-center mt-2">
+          <img src="./images/next suth.png" class="w-100"  alt="">
+          <h5 id="plname" class="fs-3 text-center mt-3">Next auth</h5>
+        </div>
+        </div>
+      </div>
         </div>
       </div>
     </section>
@@ -336,6 +356,40 @@
               </div>
             </div>
           </div>
+          <div class="col-md-4 pb-4">
+            <div class="inner">
+              <div class="card w-100 rounded-4" style="width: 18rem">
+                <img
+                style="padding-bottom: 50px !important;"
+                  class="p-2 rounded-4"
+                  src="./images/wazaker.jpeg"
+                  class="card-img-top"
+                  alt="login"
+                />
+                <div class="card-body rounded-bottom-3">
+                  <div class="d-flex justify-content-between mt-3 flex-wrap">
+                    <h4 class="card-title fw-bold text-white">
+                       وَذَكِّرْ فَإِنَّ الذِّكْرَىٰ تَنفَعُ الْمُؤْمِنِينَ
+                    </h4>
+                    <a
+                      id="prolink"
+                      target="_blank"
+                      href="https://dashing-tiramisu-fa15e7.netlify.app/"
+                      class="btn rounded-5"
+                      style="background-color: #b995bc"
+                      >Experience it</a
+                    >
+                  </div>
+                  <p class="card-text mt-3 fw-light" style="opacity: 0.7">
+                    A responsive and interactive front-end web project built
+                    using modern web technologies like HTML, CSS, and
+                    JavaScript. Focused on clean design, smooth animations, and
+                    a user-friendly experience across all devices.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -356,7 +410,7 @@
             <img class="w-50" src="./images/underline.png" alt="underline" />
           </div>
           <div class="col-md-5" id="part2">
-            <div class="inner">
+            <!-- <div class="inner">
               <h5>Name</h5>
               <div class="form-floating mb-3 mt-3">
                 <input
@@ -391,7 +445,25 @@
                   ></textarea>
               </div>
              <div id="btncontainer" class=" text-center"> <button id="subbtn" type="submit" class="btn text-white px-4 mt-4" style="background-color: #AB46AE;">Send Message</button></div>
-            </div>
+            </div> -->
+         <div class="contacting">
+           <div class="d-flex align-items-center mt-4">
+            <i class="fa-brands fa-facebook text-white fs-1"></i>
+            <p class="text-center">https://www.facebook.com/ahmd.ly.mhmd.499096</p>
+          </div>
+          <div class="d-flex align-items-center mt-4">
+            <i class="fa-brands fa-linkedin text-white fs-1"></i>
+            <p class="text-center">https://www.linkedin.com/in/ahmed-ali-2430493b1/</p>
+          </div>
+          <div class="d-flex align-items-center mt-4">
+            <i class="fa-brands fa-whatsapp text-white fs-1"></i>
+            <p class="text-center">01155180720</p>
+          </div>
+          <div class="d-flex align-items-center mt-4">
+            <i class="fa-solid fa-envelope-circle-check text-white fs-1"></i>
+            <p class="text-center">engahmedali.official@gmail.com</p>
+          </div>
+         </div>
           </div>
         </div>
       </div>
@@ -400,5 +472,17 @@
     <script src="./js/all.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
     <script src="./js/index.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+    if (typeof ScrollReveal !== "undefined") {
+        ScrollReveal().reveal('body *:not(nav):not(.menu)', {
+            duration: 800,
+            distance: '40px',
+            origin: 'bottom',
+            easing: 'ease-out',
+            reset: false
+        });
+    }
+</script>
   </body>
 </html>
