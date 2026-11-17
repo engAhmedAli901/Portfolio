@@ -130,8 +130,7 @@ nav{
   padding-bottom: 10%;
   background: linear-gradient( to top right,rgb(141, 98, 110),rgb(20, 0, 25),rgb(47, 0, 54));
 }
-#part1{
-}
+
 #namebtn,#mailbtn,#msgbtn{
   background-color: transparent !important;
   border-color: rgba(255, 255, 255, 0.5);
@@ -159,8 +158,10 @@ nav{
   border-radius: 50px;
   padding: 8px;
 }
+.fontt{
+    font-family: "Cairo", sans-serif !important;
 
-
+}
 
 
 
